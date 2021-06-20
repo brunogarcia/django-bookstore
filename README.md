@@ -2,6 +2,9 @@
 
 A project made with Django and Docker.
 
+
+Following the instructions of the book [Django for Professionals](https://djangoforprofessionals.com/).
+
 ## Run the Docker container
 
 ```bash
