@@ -167,3 +167,7 @@ ACCOUNT_USERNAME_REQUIRED = False
 
 # email
 DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
+
+# media
+MEDIA_URL = '/media/'
+MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
