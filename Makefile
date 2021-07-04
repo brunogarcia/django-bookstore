@@ -10,9 +10,17 @@ docker_build:
 	echo "Build the docker container"
 	docker build .
 
+docker_rebuild:
+	echo "Rebuild the docker container"
+	docker-compose up -d --build
+
 run_local:
 	echo "Run local development"
 	docker-compose up -d
+
+stop_local:
+	echo "Down local development"
+	docker-compose down
 
 run_unit_tests:
 	echo "Run unit tests"
