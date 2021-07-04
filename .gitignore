@@ -150,3 +150,9 @@ cython_debug/
 
 # IDE
 .idea/
+
+# Docker
+docker-compose-prod.yml
+
+# MacOS
+.DS_Store
