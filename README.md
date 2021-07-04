@@ -2,25 +2,25 @@
 
 A project made with Django and Docker.
 
-
 Following the instructions of the book [Django for Professionals](https://djangoforprofessionals.com/).
 
-## Run the Docker container
+## Build the Docker container
 
 ```bash
-docker build .
-docker-compose up -d
+make docker_build
 ```
 
-## Configure the project
+## Configure the Django project
 
 ```bash
-docker-compose exec web python manage.py migrate
-docker-compose exec web python manage.py createsuperuser
-docker-compose exec web python manage.py collectstatic
+make configure_django
 ```
 
 ## Local development
+
+```bash
+make run_local
+```
 
 - Bookstore: [http://127.0.0.1:8000/](http://127.0.0.1:8000)
 - Admin: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
@@ -29,5 +29,5 @@ docker-compose exec web python manage.py collectstatic
 ## Run the unit tests
 
 ```bash
-docker-compose exec web python manage.py test
+make run_unit_tests
 ```
